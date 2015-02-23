@@ -4,10 +4,9 @@ var path = require("path");
 
 var knownOpts = {
     "source" : path,
-    "target" : path
+    "target" : path,
+    "dumpvars" : Boolean
 };
 
 var opts = nopt(knownOpts, {}, process.argv, 2);
-
-console.log("Nops");
 nops.exec(opts);
